@@ -1,0 +1,104 @@
+.container__navbar {
+  width: 100%;
+  height: 4.75rem;
+  background-color: var(--dark);
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__navbar .logo {
+  height: 3.125rem;
+  margin-top: 0.5rem;
+}
+
+.container__navbar .profile {
+  width: 320px;
+  display: inline-block;
+  align-items: center;
+  position: relative;
+}
+
+.container__navbar .profile__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.container__navbar .profile__nav .item {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--bd-light);
+}
+
+.container__navbar .profile__nav .item__icon {
+  margin-right: 0.5rem;
+}
+
+.container__navbar .profile__nav .item__avatar {
+  margin-right: 0.25rem;
+  cursor: pointer;
+}
+
+.container__navbar .profile__nav .item-before,
+.container__navbar .profile__nav .item-after {
+  width: 24px;
+  height: 1px;
+  background: var(--bd-light);
+  transform: rotate(90deg);
+  opacity: 0.32;
+}
+
+.container__navbar .select-profile {
+  display: none;
+  width: 220px;
+  background: var(--white);
+  position: absolute;
+  margin-top: 40px;
+  top: 0px;
+  right: 0px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.container__navbar .select-profile .username {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark);
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+.container__navbar .select-profile .divisor {
+  width: 100%;
+  height: 1px;
+  background: var(--bd-light);
+}
+
+.container__navbar .select-profile .logout {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.875rem;
+  color: var(--dark);
+}
+
+.container__navbar .select-profile .logout:hover {
+  color: var(--primary);
+}
+
+.container__navbar .select-profile .logout img {
+  margin-right: 0.8rem;
+  height: 20px;
+}
+
+.container__navbar .profile:hover .select-profile {
+  display: block;
+}
