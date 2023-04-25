@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("../../../../assets/images/abertura.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.container .icons-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.container .icons-section .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container .icons-section .icon .blue,
+.container .icons-section .icon .green,
+.container .icons-section .icon .pink,
+.container .icons-section .icon .red {
+  width: 28px;
+  height: 4px;
+  margin-bottom: 2rem;
+}
+
+.container .icons-section .icon .blue {
+  background: #4173cd;
+}
+
+.container .icons-section .icon .green {
+  background: #1dc763;
+}
+
+.container .icons-section .icon .pink {
+  background: #f6b5ff;
+}
+
+.container .icons-section .icon .red {
+  background: #ff0000;
+}
+
+.container .icons-section .icon__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.container .icons-section .icon__type {
+  width: 23.125rem;
+}
